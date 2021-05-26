@@ -39,6 +39,16 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
+    /**
+     * Insert Data into local DataBase
+     *
+     * @param vehicleNumber
+     * @param vehicleType
+     * @param vehicleCompany
+     * @param vehicleModel
+     * @param vehicleFuelType
+     * @param vehicleTransmission
+     */
     public void insertData(String vehicleNumber, String vehicleType, String vehicleCompany, String vehicleModel,
                            String vehicleFuelType, String vehicleTransmission) {
         SQLiteDatabase db = this.getWritableDatabase();
@@ -54,6 +64,12 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         db.insert("VehicleDetails", null, values);
     }
 
+    /**
+     * Based on vehicle id get the list of data.
+     *
+     * @param id
+     * @return
+     */
 
     public List<String> getVehicleDetailsById(String id) {
         SQLiteDatabase db = this.getWritableDatabase();
@@ -86,6 +102,11 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         return listCities;
     }
 
+    /**
+     * get all details from LocalDB
+     *
+     * @return
+     */
     public List<GetVehicleDetails> getAllVehicleDetails() {
         SQLiteDatabase db = this.getWritableDatabase();
         String rawQuery = "select * from VehicleDetails";
@@ -114,6 +135,12 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         return listVehicleDetails;
     }
 
+    /**
+     * based on vehicle Number check dataBase exist or not
+     *
+     * @param id
+     * @return
+     */
     public String getVehicleId(String id) {
         SQLiteDatabase db = this.getWritableDatabase();
         String query = "select vehicleNumber from VehicleDetails where vehicleNumber='" + id + "'";

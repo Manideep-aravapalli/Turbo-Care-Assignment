@@ -21,6 +21,12 @@ public class VehicleMakeController {
         this.vehicleMakeInterface = vehicleMakeInterface;
     }
 
+    /**
+     * Based on  Vehicle Type show companies
+     *
+     * @param context
+     * @param type (2w & 4W)
+     */
     public void vehicleMakeSelection(Context context, String type) {
         apiService = RetrofitClient.getClient(context).create(APIService.class);
         apiService.twoAndFourWheelerApi(type).enqueue(new Callback<List<String>>() {

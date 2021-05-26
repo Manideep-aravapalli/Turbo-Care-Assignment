@@ -50,8 +50,8 @@ public class SelectTransmissionActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.vehicle_transmission_type_selection_recycleView);
 
         vehicleSelectionTransmissions.clear();
-        vehicleSelectionTransmissions.add(new VehicleSelectionTransmission("Manual"));
-        vehicleSelectionTransmissions.add(new VehicleSelectionTransmission("Automatic"));
+        vehicleSelectionTransmissions.add(new VehicleSelectionTransmission(getResources().getString(R.string.manual)));
+        vehicleSelectionTransmissions.add(new VehicleSelectionTransmission(getResources().getString(R.string.automatic)));
 
         vehicleTransmissionAdapter = new VehicleTransmissionAdapter(this, vehicleSelectionTransmissions);
         LinearLayoutManager mLayoutManager = new LinearLayoutManager(this);

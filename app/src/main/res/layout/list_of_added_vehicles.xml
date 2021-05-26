@@ -43,6 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_16dp"
         android:background="@drawable/arrow_forward"
+        android:backgroundTint="@color/black"
         android:contentDescription="@string/inspect"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

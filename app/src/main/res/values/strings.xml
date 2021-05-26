@@ -14,4 +14,8 @@
     <string name="fuel_type">Fuel Type</string>
     <string name="transmission">Transmission</string>
 
+
+    <string name="manual">Manual</string>
+    <string name="automatic">Automatic</string>
+
 </resources>

@@ -16,6 +16,9 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
+/**
+ * using this class show local DB list and add new vehicle
+ */
 public class MainActivity extends AppCompatActivity {
 
     private FloatingActionButton addNewVehicles;
@@ -31,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
 
         initView();
         onClickListener();
-
 
     }
 

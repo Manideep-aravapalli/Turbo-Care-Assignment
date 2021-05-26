@@ -21,6 +21,13 @@ public class VehicleModelController {
         this.vehicleModelInterface = vehicleModelInterface;
     }
 
+    /**
+     * Based on Vehicle Type and Company show models list
+     *
+     * @param context
+     * @param type    (2w & 4W)
+     * @param company like honda & BMW & Jeep ..etc
+     */
     public void vehicleModels(Context context, String type, String company) {
         apiService = RetrofitClient.getClient(context).create(APIService.class);
         apiService.LIST_CALL(type, company).enqueue(new Callback<List<String>>() {
