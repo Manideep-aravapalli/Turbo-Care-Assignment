@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TurboCareAssignment</string>
+    <string name="vehicles">vehicles</string>
+    <string name="inspect">Inspect</string>
+    <string name="create_new_vehicle_profile">Create new vehicle Profile</string>
+    <string name="vehicle_number">vehicle number</string>
+    <string name="vehicle_selection">Vehicle selection</string>
+    <string name="select_make">Select Make</string>
+    <string name="select_model">Vehicle Model</string>
+    <string name="select_fuel_type">Select Fuel Type</string>
+    <string name="select_transmission">Select Transmission</string>
+    <string name="make">make</string>
+    <string name="model">Model</string>
+    <string name="fuel_type">Fuel Type</string>
+    <string name="transmission">Transmission</string>
+
+</resources>

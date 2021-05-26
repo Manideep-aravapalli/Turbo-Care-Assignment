@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppMaterialTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="fontFamily">@font/proximanova_regular</item>
+        <item name="colorPrimary">@color/colorHeadBar</item>
+        <item name="colorPrimaryDark">@color/colorHeadBar</item>
+        <item name="colorAccent">@color/colorHeadBar</item>
+<!--        <item name="actionModeStyle">@style/Button_action</item>-->
+        <item name="materialAlertDialogTheme">
+            @style/MyThemeOverlay_MaterialComponents_MaterialAlertDialog
+        </item>
+    </style>
+
+    <style name="MyThemeOverlay_MaterialComponents_MaterialAlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <!--        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.App.MediumComponent</item>-->
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:paddingBottom">@dimen/padding_3dp</item>
+        <item name="contentPadding">@dimen/padding_5dp</item>
+        <item name="android:textSize">@dimen/font_16sp</item>
+        <item name="fontFamily">@font/proximanova_bold</item>
+        <!--<item name="buttonBarPositiveButtonStyle">@style/Widget.App.Button</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.App.Button</item>-->
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorHeadBar</item>
+        <item name="colorPrimaryDark">@color/colorHeadBar</item>
+        <item name="colorAccent">@color/colorHeadBar</item>
+        <item name="materialAlertDialogTheme">
+            @style/MyThemeOverlay_MaterialComponents_MaterialAlertDialog
+        </item>
+    </style>
+
+    <style name="CircleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+
+    <style name="Theme.MyApplication.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MyApplication.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ToolBarTheme.ToolBarStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorPrimaryInverse">@color/white</item>
+    </style>
+
+
+    <dimen name="padding_3dp">3dp</dimen>
+    <dimen name="padding_5dp">5dp</dimen>
+</resources>
